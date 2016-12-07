@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.theone.sns"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.theone.sns.util.photoview.PhotoView
+        android:id="@+id/photo_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.theone.sns.util.RoundProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        app:Inside_Interval="1"
+        app:Paint_Color="@color/color_ffd800"
+        app:Paint_Width="5"
+        app:Show_Bottom="false"
+        app:fill="false" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userAvatarLayout"
+    android:layout_width="40dip"
+    android:layout_height="40dip"
+    android:layout_gravity="top"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip">
+
+    <com.theone.sns.util.RoundAngleImageView
+        android:id="@+id/userAvatar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/default_avatar_squared"
+        android:layout_gravity="center" />
+</FrameLayout>

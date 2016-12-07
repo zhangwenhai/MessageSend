@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.theone.sns.util.uiwidget.ResizeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/empty_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:gravity="center"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/msgListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:listSelector="#00000000"
+            android:transcriptMode="alwaysScroll" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chatActionContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/chatTextActionContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_actionbar_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/plus_sendphoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dip"
+                    android:scaleType="center"
+                    android:src="@drawable/chat_cocoteam_photo_selector"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/plus_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dip"
+                    android:scaleType="center"
+                    android:src="@drawable/chat_plus_selector" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_entryfield"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/textMsgEditText"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="2dip"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:imeOptions="actionSend"
+                        android:inputType="text|textCapSentences|textAutoCorrect|textMultiLine"
+                        android:maxLines="5"
+                        android:minHeight="30dip"
+                        android:singleLine="false"
+                        android:textSize="18sp"></EditText>
+
+                    <Button
+                        android:id="@+id/showEmojiBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/btn_emoji" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/sendTextBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:scaleType="center"
+                    android:src="@drawable/chat_send_selector"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/sendVoiceBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:scaleType="center"
+                    android:src="@drawable/btn_mic_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emoji_pager_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="10dip"
+                android:visibility="gone">
+
+                <com.theone.sns.util.HackyViewPager
+                    android:id="@+id/emoji_pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dip"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:scrollbars="horizontal" />
+
+                <com.theone.sns.util.uiwidget.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/emoji_indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="18dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#b8babd" />
+            </LinearLayout>
+
+            <include layout="@layout/chat_voicebtn_container"></include>
+
+            <include layout="@layout/chatplus_menu_container1"></include>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.theone.sns.util.uiwidget.ResizeLinearLayout>

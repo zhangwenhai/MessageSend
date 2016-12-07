@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.theone.sns.util.uiwidget.pulltorefresh.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res/com.theone.sns"
+        android:id="@+id/mblog_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/Gray"
+        android:listSelector="@drawable/list_selector"
+        ptr:mode="both"
+        android:dividerHeight="0dip" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:paddingLeft="5dip"
+            android:gravity="center_vertical"
+            android:background="@drawable/chat_actionbar_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:hint="@string/add_comment"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <ImageView
+                    android:id="@+id/show_emoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/comment_expression_icon_selector"
+                    android:layout_marginRight="8dip"
+                    android:padding="5dip" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/comment_send_btn_selector"
+                android:text="@string/send"
+                android:textColor="@color/white"
+                android:layout_margin="10dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emoji_pager_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dip"
+            android:visibility="gone">
+
+            <com.theone.sns.util.HackyViewPager
+                android:id="@+id/emoji_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="200dip"
+                android:layout_weight="1"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:scrollbars="horizontal" />
+
+            <com.theone.sns.util.uiwidget.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/emoji_indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="18dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#b8babd" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

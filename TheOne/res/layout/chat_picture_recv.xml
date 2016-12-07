@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.theone.sns"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include layout="@layout/chat_avatar_recv"></include>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="4dp">
+
+            <com.theone.sns.util.uiwidget.ChatImageViewRecv
+                android:id="@+id/chatPicContent"
+                android:layout_width="150dip"
+                android:layout_height="150dip"
+                android:focusable="true"
+                android:scaleType="fitXY" />
+
+            <com.theone.sns.util.RoundProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                app:Inside_Interval="1"
+                app:Paint_Color="@color/color_ffd800"
+                app:Paint_Width="5"
+                app:Show_Bottom="false"
+                app:fill="false" />
+
+            <TextView
+                android:id="@+id/user_snape_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/chat_name_recv"></include>
+
+</LinearLayout>

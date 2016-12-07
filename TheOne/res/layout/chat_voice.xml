@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.theone.sns"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical">
+
+    <ProgressBar
+        android:id="@+id/loading_progress"
+        style="?android:attr/progressBarStyleSmallInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/msgContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/play_green" />
+
+    <com.theone.sns.util.RoundProgressBar
+        android:id="@+id/sound_playbar"
+        android:layout_width="27dip"
+        android:layout_height="27dip"
+        android:layout_gravity="center"
+        app:Inside_Interval="1"
+        app:Paint_Color="@color/green_75bf1c"
+        app:Paint_Width="2"
+        app:Show_Bottom="false"
+        app:fill="false" />
+
+</FrameLayout>

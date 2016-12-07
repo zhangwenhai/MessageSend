@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@color/black">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/photo_close_icon"
+            android:onClick="OnClickBack"
+            android:layout_centerVertical="true"
+            android:padding="10dip" />
+
+        <ImageView
+            android:id="@+id/reversal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/photo_flip_icon"
+            android:onClick="reversalOnclick"
+            android:layout_centerVertical="true"
+            android:padding="10dip"
+            android:layout_marginRight="5dip" />
+
+        <ImageView
+            android:id="@+id/flashlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/photo_flash_icon"
+            android:padding="5dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/FrameLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/start_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black">
+
+            <Button
+                android:id="@+id/takepicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="takePictureOnclick"
+                android:background="@drawable/take_photo_btn_selector"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

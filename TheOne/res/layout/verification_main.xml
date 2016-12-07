@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/BigTextSize"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="请输入收到的验证码" />
+    <!--
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:textSize="12dip"
+        android:text="由于您的注册账户是邮箱，验证码已经发至邮箱，请注意查收" />
+    -->
+
+    <com.theone.sns.util.uiwidget.EditTextWithClear
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/ios7_white" >
+
+        <EditText
+            android:id="@+id/verification_num"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="0123456789"
+            android:drawableLeft="@drawable/registration_verification"
+            android:drawablePadding="4dip"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:paddingLeft="8dip"
+            android:singleLine="true"
+            android:textColorHint="@color/iphone_hint" />
+    </com.theone.sns.util.uiwidget.EditTextWithClear>
+
+</LinearLayout>

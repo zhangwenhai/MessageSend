@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <com.theone.sns.util.uiwidget.pulltorefresh.PullToRefreshGridView xmlns:ptr="http://schemas.android.com/apk/res/com.theone.sns"
+        android:id="@+id/grid_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:paddingTop="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        ptr:mode="both"
+        android:layout_weight="1"
+        android:horizontalSpacing="2px"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2px" />
+
+</LinearLayout>

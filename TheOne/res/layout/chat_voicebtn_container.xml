@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/voicebtn_container"
+    android:layout_width="match_parent"
+    android:layout_height="216dip"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/chat_voice_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/chat_voicebtn_selector" />
+
+    <TextView
+        android:id="@+id/chat_voice_btn_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dip"
+        android:text="@string/hold_to_talk"
+        android:textColor="@color/gray_808080"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <com.theone.sns.util.RoundedImageView
+                android:id="@+id/image"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_marginLeft="20dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/recorder_txt"
+                    style="@style/BigTextSize"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@color/white"
+                    android:gravity="top|left"
+                    android:hint="@string/say" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingTop="10dip"
+        android:text="给谁看"
+        android:textColor="#9A9A9A"
+        android:textSize="16dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/white"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/say1"
+            android:textColor="@color/black"
+            android:textSize="16dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="50dip"
+            android:background="@color/iphone_line" />
+
+        <TextView
+            android:id="@+id/friend"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/say3"
+            android:textColor="@color/black"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingTop="10dip"
+        android:text="同步到"
+        android:textColor="#9A9A9A"
+        android:textSize="16dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@color/white"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/publish_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/publish_circle_of_friends_icon"
+            android:gravity="center"
+            android:text="@string/wechatmoments"
+            android:textColor="@color/gray"
+            android:textSize="16dip" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="60dip"
+            android:background="@color/iphone_line" />
+
+        <TextView
+            android:id="@+id/publish_xl"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/publish_xl_icon"
+            android:gravity="center"
+            android:text="@string/sinaweibo"
+            android:textColor="@color/gray"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+</LinearLayout>

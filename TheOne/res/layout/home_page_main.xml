@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.theone.sns.util.uiwidget.pulltorefresh.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res/com.theone.sns"
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/Gray"
+        android:dividerHeight="0.5dip"
+        android:listSelector="@drawable/list_selector"
+        ptr:mode="both" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/BigTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dip"
+            android:text="@string/home_page_empty" />
+
+        <TextView
+            style="@style/BigTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:text="@string/home_page_empty1" />
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/BigTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dip"
+            android:text="@string/home_page_empty2"
+            android:textColor="@color/color_ffd800" />
+    </LinearLayout>
+
+</LinearLayout>

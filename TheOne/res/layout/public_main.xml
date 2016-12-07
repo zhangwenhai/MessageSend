@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <RelativeLayout
+            android:id="@+id/rela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginBottom="10dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/audio_view"
+                android:layout_width="59dip"
+                android:layout_height="59dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/home_audio_play" />
+
+            <com.theone.sns.util.RoundProgressBar
+                android:id="@+id/sound_playbar"
+                xmlns:app="http://schemas.android.com/apk/res/com.theone.sns"
+                android:layout_width="55dip"
+                android:layout_height="55dip"
+                android:layout_centerInParent="true"
+                app:Inside_Interval="1"
+                app:Paint_Color="@color/green_75bf1c"
+                app:Paint_Width="3"
+                app:Show_Bottom="false"
+                app:fill="false" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@id/rela"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dip"
+            android:background="@color/color_80000000">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalscrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="150dip"
+                android:fadingEdgeLength="0dip"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <GridView
+                        android:id="@+id/photo_gridView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:columnWidth="86dip"
+                        android:horizontalSpacing="2dip"
+                        android:fadingEdgeLength="0dip"
+                        android:listSelector="@color/translucent_background"
+                        android:numColumns="auto_fit"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="65dip"
+                android:background="@color/color_2b282d">
+
+                <TextView
+                    android:id="@+id/remake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textSize="18dip"
+                    android:text="@string/remake"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:padding="15dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/add_audio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/publish_add_audio_btn"
+                        android:layout_marginTop="5dip"
+                        android:layout_marginBottom="5dip"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="添加录音"
+                        android:textColor="@color/black"
+                        android:textSize="16dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/confir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textSize="18dip"
+                    android:text="@string/confirmation"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:padding="15dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

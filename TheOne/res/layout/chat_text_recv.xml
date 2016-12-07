@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include layout="@layout/chat_avatar_recv"></include>
+
+        <com.theone.sns.util.uiwidget.OneClickTextView
+            android:id="@+id/msgContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="40dip"
+            android:autoLink="web|phone"
+            android:background="@drawable/chatfrom_bg"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="1dp"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <include layout="@layout/chat_name_recv"></include>
+
+</LinearLayout>

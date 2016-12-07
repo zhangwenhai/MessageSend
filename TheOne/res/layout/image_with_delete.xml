@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.theone.sns.util.RoundAngleImageView
+        android:id="@+id/srcImage"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/delelteImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chat_delete_sign_icon"
+        android:layout_alignRight="@id/srcImage"
+        android:layout_alignTop="@id/srcImage"
+        android:padding="5dip"
+        android:layout_marginTop="-6dip"
+        android:layout_marginRight="-7dip" />
+
+</RelativeLayout>

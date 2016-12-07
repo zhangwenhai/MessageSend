@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/voice_top"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/voice_container"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <com.theone.sns.util.uiwidget.RadialGradientView
+            android:id="@+id/backView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" />
+
+        <com.theone.sns.util.uiwidget.SinusView
+            android:id="@+id/sinusview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:paddingBottom="30dip"
+            android:paddingTop="30dip" />
+
+        <TextView
+            android:id="@+id/record_time_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:paddingBottom="20dip"
+            android:textColor="@color/TrueWhite"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/record_top_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@color/TrueWhite"
+        android:gravity="center"
+        android:text="@string/drag_up_cancel"
+        android:textColor="@color/gray_808080"
+        android:textSize="14sp" />
+
+</LinearLayout>

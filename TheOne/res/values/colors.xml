@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="gray">#ff777777</color>
+    <color name="black">#ff000000</color>
+    <color name="black1">#3a3142</color>
+    <color name="blue">#286091</color>
+    <color name="red">#ffff0000</color>
+    <color name="grey">#ff58616d</color>
+    <color name="green">#ff00ff00</color>
+    <color name="green_disable">#98e997</color>
+    <color name="toasterro">#ff9fd524</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="lightransparent">#a0000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="iphoneDivider">#ffABABAB</color>
+    <color name="setting_title">#ff4C566C</color>
+    <color name="dark_green">#ff008000</color>
+    <color name="text_gray">#ff9B9B9B</color>
+    <color name="text_hint">#ffCBCBCB</color>
+    <color name="tabMedium">#2B2B2B</color>
+    <color name="tabDark">#000000</color>
+    <color name="tabTransparent">#10ffffff</color>
+    <color name="shake_bg">#ffe5e5e5</color>
+    <color name="separator_upper">#ffFEFEFE</color>
+    <color name="separator_lower">#f7f7f7</color>
+    <color name="text_gray1">#969696</color>
+    <color name="text_gray2">#787878</color>
+    <color name="snap_bg">#E1E0DE</color>
+    <color name="snap_smile_read">#939393</color>
+    <color name="snap_smile_unread">#35B3E9</color>
+    <color name="iphone_style_bg_color">#e5e5e5e5</color>
+    <color name="iphone_style_red_color">#ff3b30</color>
+    <color name="text_click_color">#00608f</color>
+    <color name="text_login_green">#75bf1c</color>
+    <color name="contact_tag">#ffb2b2b2</color>
+    <color name="TrueWhite">#FFFFFF</color>
+    <color name="Green">#BBE15C</color>
+    <color name="TrueBlack">#000000</color>
+    <color name="LightGray">#00999999</color>
+    <color name="LightBlue">#0033AA</color>
+    <color name="Gray">#E1E8ED</color>
+    <color name="bg">#FF414141</color>
+    <color name="select_green">#91CD22</color>
+    <color name="select_light_blue">#e8fafd</color>
+    <color name="translucent_background">#00000000</color>
+    <color name="color_80000000">#80000000</color>
+    <color name="color_ffffffff">#ffffffff</color>
+    <color name="color_ffcccccc">#FFCCCCCC</color>
+    <color name="stand_blue">#FF4DBCFA</color>
+    <color name="progress">#2180f7</color>
+    <color name="progress_background">#e5e5e5</color>
+    <color name="progress_background1">#8FFFFFFF</color>
+    <color name="ios7_white">#FFFFFF</color>
+    <color name="ios7_white_press">#bababa</color>
+    <color name="gray_noti">#808080</color>
+    <!-- the colors below are for universal usage -->
+    <color name="unvrsl_content_background">#FFF2F2F2</color>
+    <color name="unvrsl_overlay_background">#aa333333</color>
+    <color name="unvrsl_txt_important">#ff333333</color>
+    <color name="unvrsl_txt_minor">#ff666666</color>
+    <color name="unvrsl_txt_less_minor">#ff999999</color>
+    <color name="unvrsl_txt_highlight">#ff1074bc</color>
+    <color name="unvrsl_txt_dark_blue">#ff183952</color>
+    <color name="btn_txt_white">#ffffffff</color>
+    <color name="btn_txt_green">#ff4e7f11</color>
+    <color name="btn_txt_red">#ffa91313</color>
+    <color name="btn_txt_blue">#ff115585</color>
+    <color name="txt_shadow_black">#44000000</color>
+    <color name="txt_shadow_white">#88ffffff</color>
+    <color name="list_item_pressed">#1A81B8E7</color>
+    <color name="registration_send_btn_color">#1EB754</color>
+    <!-- the colors above are for universal usage -->
+
+
+    <!-- init page -->
+    <color name="green_75bf1c">#75bf1c</color>
+    <color name="green_588f15">#588f15</color>
+    <color name="green_b1d78f">#b1d78f</color>
+
+    <!-- the colors below are for barcode usage -->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#cf000000</color>
+    <!-- the colors above are for barcode usage -->
+
+
+    <!-- the colors below are for forward usage -->
+    <color name="forward_title_select">#000000</color>
+    <color name="forward_title_normal">#868686</color>
+    <color name="forward_title_back">#ffffff</color>
+    <!-- the colors above are for forward usage -->
+
+    <color name="light_grey">#c8c8c8</color>
+    <color name="navy_blue_on">#c5dffd</color>
+    <color name="navy_blue_dis">#c4defe</color>
+    <color name="navy_blue">#FDBB29</color>
+    <color name="photo_red">#ee6868</color>
+    <color name="sendpicview_bg">#e5e5e5</color>
+    <color name="ios7_white_1">#7fF8F8F8</color>
+    <color name="find_friend">#808080</color>
+
+    <!-- the colors below are for dialog usage -->
+    <color name="white_alpha90">#e6ffffff</color>
+    <color name="contextmenu_title">#c0c0c0</color>
+    <!-- the colors above are for dialog usage -->
+
+
+    <!-- the colors below are for chat usage -->
+    <color name="chat_bg_actionbar">#c8c8c8</color>
+    <!-- the colors above are for chat usage -->
+
+
+    <!-- the colors below are for opinion usage -->
+    <color name="opinion_blue">#16dec9</color>
+    <color name="opinion_blue_on">#3aac9d</color>
+    <color name="opinion_red">#ed7b36</color>
+    <color name="opinion_red_on">#b8632f</color>
+    <color name="opinion_gray">#c8c8c8</color>
+    <!-- the colors above are for opinion usage -->
+
+    <color name="gray_808080">#808080</color>
+
+    <color name="gray_e5e5e5">#e5e5e5</color>
+    <color name="groupname_dark">#000000</color>
+    <color name="color_808080">#808080</color>
+    <color name="color_c8c8c8">#c8c8c8</color>
+    <color name="gray_f6f6f6">#f6f6f6</color>
+
+    <color name="green_90ca1d">#f290ca1d</color>
+    <color name="gray_dbdbdb">#DBDBDB</color>
+    <color name="red_f45355">#F45355</color>
+    <color name="green_3a5012">#3A5012</color>
+    <color name="green_73a217">#73a217</color>
+    <color name="red_f75151">#f75151</color>
+    <color name="iphone_line">#cccccc</color>
+    <color name="iphone_hint">#cacaca</color>
+    <color name="color_929292">#929292</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_2a2a2a">#2a2a2a</color>
+    <color name="color_e8ac28">#E8AC28</color>
+    <color name="color_ffd800">#FFD800</color>
+    <!--<color name="color_e8ac28">#E8AC28</color>-->
+    <!--#F2F2F2unvrsl_content_background-->
+
+    <color name="transparent_background">#50000000</color>
+    <color name="color_f0f0f0">#F0F0F0</color>
+    <color name="color_2b282d">#2b282d</color>
+    <color name="search_bg">#eeeeee</color>
+    <color name="color_f3e8d5">#f3e8d5</color>
+    <color name="color_fffff7">#fffff7</color>
+    <color name="color_439afb">#439AFB</color>
+</resources>

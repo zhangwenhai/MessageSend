@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/other_view"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/video_rela"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <VideoView
+                android:id="@+id/video"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip">
+
+                <com.theone.sns.util.RoundProgressBar
+                    android:id="@+id/sound_playbar"
+                    xmlns:app="http://schemas.android.com/apk/res/com.theone.sns"
+                    android:layout_width="55dip"
+                    android:layout_height="55dip"
+                    android:layout_centerInParent="true"
+                    app:Inside_Interval="1"
+                    app:Paint_Color="@color/green_75bf1c"
+                    app:Paint_Width="3"
+                    app:Show_Bottom="false"
+                    app:fill="false" />
+
+                <ImageView
+                    android:id="@+id/video_view"
+                    android:layout_width="59dip"
+                    android:layout_height="59dip"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/home_video_play_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

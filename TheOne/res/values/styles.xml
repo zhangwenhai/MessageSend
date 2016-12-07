@@ -1,0 +1,141 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="NavPage">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">#d9d9d9</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="TheOneTitleButton">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:minWidth">64.0dip</item>
+    </style>
+
+    <style name="TheOneTheme.Basic" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:listViewStyle">@style/TheOneListViewStyle</item>
+        <item name="android:windowAnimationStyle">@style/TheOneAnimation</item>
+        <item name="android:windowBackground">@color/iphone_style_bg_color</item>
+    </style>
+
+    <style name="TheOneTheme.Transparent" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:listViewStyle">@style/TheOneListViewStyle</item>
+        <item name="android:windowAnimationStyle">@style/TheOneAnimation</item>
+        <item name="android:windowBackground">@color/transparent_background</item>
+    </style>
+
+    <style name="Theme.Translucent" mce_bogus="1" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+        <item name="android:windowBackground">@color/transparent_background</item>
+    </style>
+
+    <style name="TheOneListViewStyle">
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:listSelector">@drawable/list_selector_background</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0px</item>
+    </style>
+
+    <style name="TheOneAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/tran_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/tran_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/tran_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/tran_right_out</item>
+    </style>
+
+    <style name="PopupAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/pop_up_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_up_out</item>
+    </style>
+
+    <style name="SmallBlueButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/btn_blue_small</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BigTextSize">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="EditTextWithClear">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/menushow</item>
+        <item name="android:windowExitAnimation">@anim/menuhide</item>
+    </style>
+
+    <style name="NormalRedButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44dip</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/selector_btn_red</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NormalGreenButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/btn_green</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@drawable/selector_btn_green_text</item>
+    </style>
+
+    <style name="ChatStatus">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#a8a8a8</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="ChatTime">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@null</item>
+    </style>
+
+</resources>

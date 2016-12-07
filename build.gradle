@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+    }
+}
+task wrapper(type: Wrapper) {
+    gradleVersion = "1.10"
+}
+apply plugin: 'android'
+android {
+    compileSdkVersion 19
+    buildToolsVersion '20.0.0'
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'TheOne/AndroidManifest.xml'
+            java.srcDirs = ['TheOne/src']
+            resources.srcDirs = ['TheOne/src']
+            renderscript.srcDirs = ['TheOne/src']
+            res.srcDirs = ['TheOne/res']
+            assets.srcDirs = ['TheOne/assets']
+        }
+    }
+
+    dependencies {
+        compile fileTree(dir: 'TheOne/libs', include: '*.jar')
+    }
+}
+dependencies {
+}

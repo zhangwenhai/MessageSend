@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.theone.sns.util.uiwidget.ImageWithDelete
+        android:id="@+id/user_avatar"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/gray_808080"
+        android:layout_marginTop="5dip"
+        android:textSize="12sp" />
+
+</LinearLayout>

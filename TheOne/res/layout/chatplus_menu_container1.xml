@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/plusbtn_container"
+    android:layout_width="match_parent"
+    android:layout_height="216dip"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <GridView
+        android:id="@+id/chat_plus_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="20dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        android:gravity="center"
+        android:horizontalSpacing="5dip"
+        android:numColumns="4"
+        android:verticalSpacing="25dip"></GridView>
+</LinearLayout>

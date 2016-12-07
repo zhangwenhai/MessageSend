@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/BigTextSize"
+        android:padding="10dip"
+        android:text="验证成功，请设置新密码:" />
+
+    <com.theone.sns.util.uiwidget.EditTextWithClear
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ios7_white"
+        android:layout_marginTop="10dip">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:hint="请输入密码"
+            android:paddingLeft="10dip"
+            android:textColorHint="@color/iphone_hint"
+            android:background="@null"
+            android:singleLine="true" />
+    </com.theone.sns.util.uiwidget.EditTextWithClear>
+
+    <com.theone.sns.util.uiwidget.EditTextWithClear
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ios7_white"
+        android:layout_marginTop="10dip">
+
+        <EditText
+            android:id="@+id/password_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:hint="请再次输入密码"
+            android:paddingLeft="10dip"
+            android:textColorHint="@color/iphone_hint"
+            android:background="@null"
+            android:singleLine="true" />
+    </com.theone.sns.util.uiwidget.EditTextWithClear>
+</LinearLayout>

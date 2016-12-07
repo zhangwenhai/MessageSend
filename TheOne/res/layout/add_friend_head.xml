@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="#c9c9c9"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="43dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip" >
+
+            <com.theone.sns.util.uiwidget.EditTextWithClear
+                android:id="@+id/search_box_view"
+                android:layout_width="fill_parent"
+                android:layout_height="32dip"
+                android:background="@drawable/searchbar_inputbox" >
+
+                <EditText
+                    android:id="@+id/search_box"
+                    style="@style/EditTextWithClear"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/searchbar_magnifier"
+                    android:drawablePadding="10dip"
+                    android:hint="@string/add_friend_search"
+                    android:imeOptions="actionSearch"
+                    android:paddingLeft="6dip"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="16dip" />
+            </com.theone.sns.util.uiwidget.EditTextWithClear>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/head_view1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:padding="10dip"
+            android:text="还没有好友，向他们发送邀请吧"
+            android:textColor="#929292" />
+
+        <RelativeLayout
+            android:id="@+id/phone_view"
+            android:layout_width="fill_parent"
+            android:layout_height="46dip"
+            android:background="@drawable/list_item_background" >
+
+            <TextView
+                style="@style/BigTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:drawableLeft="@drawable/add_friends_contact_icon"
+                android:gravity="center"
+                android:text="@string/phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:drawableRight="@drawable/iphone_submenu_normal"
+                android:text=""
+                android:textSize="16dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/iphone_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wechat_view"
+            android:layout_width="fill_parent"
+            android:layout_height="46dip"
+            android:background="@drawable/list_item_background" >
+
+            <TextView
+                style="@style/BigTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:drawableLeft="@drawable/add_friends_weixin_icon"
+                android:gravity="center"
+                android:text="@string/add_friend_weixin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:drawableRight="@drawable/iphone_submenu_normal"
+                android:text=""
+                android:textSize="16dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/iphone_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/xinlang_view"
+            android:layout_width="fill_parent"
+            android:layout_height="46dip"
+            android:background="@drawable/list_item_background" >
+
+            <TextView
+                style="@style/BigTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:drawableLeft="@drawable/add_friends_xl_icon"
+                android:gravity="center"
+                android:text="@string/add_friend_xinlang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:drawableRight="@drawable/iphone_submenu_normal"
+                android:text=""
+                android:textSize="16dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/iphone_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/recommendations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE"
+                android:gravity="center|left"
+                android:padding="10dip"
+                android:text="@string/add_friend_recommendations"
+                android:textColor="#929292" />
+
+            <TextView
+                android:id="@+id/other_recommendations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/recommendations"
+                android:background="#EEEEEE"
+                android:gravity="center|right"
+                android:padding="10dip"
+                android:text="@string/add_friend_other_recommendations"
+                android:textColor="#929292" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

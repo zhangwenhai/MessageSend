@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/touxiang_view"
+                android:layout_width="fill_parent"
+                android:layout_height="80dip">
+
+                <TextView
+                    style="@style/BigTextSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/touxiang" />
+
+                <TextView
+                    android:id="@+id/register_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:drawableRight="@drawable/iphone_submenu_normal"
+                    android:textSize="16dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/touxiang"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_toLeftOf="@id/register_city" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@color/iphone_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nickname_view"
+                android:layout_width="fill_parent"
+                android:layout_height="46dip">
+
+                <TextView
+                    style="@style/BigTextSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/nickname" />
+
+                <TextView
+                    android:id="@+id/nickname_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/iphone_submenu_normal"
+                    android:textSize="16dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@color/iphone_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/role_view"
+                android:layout_width="fill_parent"
+                android:layout_height="46dip">
+
+                <TextView
+                    style="@style/BigTextSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/role" />
+
+                <TextView
+                    android:id="@+id/role_dis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/iphone_submenu_normal"
+                    android:textSize="16dip" />
+
+                <ImageView
+                    android:id="@+id/role_dis"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/role_dis1" />
+                
+                <TextView
+                    android:id="@+id/role_dis_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/role_dis1"
+                    android:textSize="16dip"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@color/iphone_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/birthday_view"
+                android:layout_width="fill_parent"
+                android:layout_height="46dip">
+
+                <TextView
+                    style="@style/BigTextSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/birthday" />
+
+                <TextView
+                    android:id="@+id/birthday_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/iphone_submenu_normal"
+                    android:text="1992-03-22"
+                    android:textSize="16dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@color/iphone_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/height_view"
+                android:layout_width="fill_parent"
+                android:layout_height="46dip">
+
+                <TextView
+                    style="@style/BigTextSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/height" />
+
+                <TextView
+                    android:id="@+id/height_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/iphone_submenu_normal"
+                    android:text="160cm"
+                    android:textSize="16dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@color/iphone_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_view"
+                android:layout_width="fill_parent"
+                android:layout_height="46dip">
+
+                <TextView
+                    style="@style/BigTextSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/area" />
+
+                <TextView
+                    android:id="@+id/area_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/iphone_submenu_normal"
+                    android:text="北京"
+                    android:textSize="16dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@color/iphone_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/xinghun_view"
+                android:layout_width="fill_parent"
+                android:layout_height="46dip">
+
+                <TextView
+                    style="@style/BigTextSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/xinghun" />
+
+                <com.theone.sns.util.uiwidget.swithbutton.SwitchButton
+                    android:id="@+id/marriage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@color/iphone_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/intent_view"
+                android:layout_width="fill_parent"
+                android:layout_height="46dip">
+
+                <TextView
+                    style="@style/BigTextSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/intent" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:src="@drawable/iphone_submenu_normal_shang" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/image"
+                    android:text="展开"
+                    android:textSize="16dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@color/iphone_line" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/grid_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:visibility="gone">
+
+                <GridView
+                    android:id="@+id/interests"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:horizontalSpacing="20dip"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="15dip"></GridView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

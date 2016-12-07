@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/chat_avatar_recv" >
+        </include>
+
+        <RelativeLayout
+            android:id="@+id/msgContent"
+            android:layout_width="217dip"
+            android:layout_height="121dip" >
+
+            <com.theone.sns.util.uiwidget.ChatLocationViewRecv
+                android:id="@+id/chatPicContent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:focusable="true"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="6dip"
+                android:background="@drawable/location_bottom"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="3"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/chat_name_recv" >
+    </include>
+
+</LinearLayout>

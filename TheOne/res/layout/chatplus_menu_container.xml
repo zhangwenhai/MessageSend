@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_alpha90"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/chat_plus_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        android:gravity="center"
+        android:horizontalSpacing="2dip"
+        android:numColumns="4"
+        android:verticalSpacing="25dip"></GridView>
+
+    <View
+        android:id="@+id/chat_plus_gap"
+        android:layout_width="fill_parent"
+        android:layout_height="25dip" />
+
+    <Button
+        android:id="@+id/action_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/menu_profile_cancel"
+        android:gravity="center"
+        android:text="@string/Cancel"
+        android:textColor="@color/navy_blue"
+        android:textSize="20sp" />
+
+</LinearLayout>

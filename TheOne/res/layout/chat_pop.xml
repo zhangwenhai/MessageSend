@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dip"
+        android:layout_marginRight="13dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/group_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tanchukuang_shang_bg_selector"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/group_chat_icon"
+                android:text="@string/group_chat"
+                android:textColor="@color/white"
+                android:textSize="20dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:drawablePadding="5dip"
+                android:layout_marginRight="2dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/tanchukuang_zhong_bg_selector">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/iphone_line"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/add_friends_icon"
+                android:text="@string/add_friend1"
+                android:textColor="@color/white"
+                android:textSize="20dip"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:drawablePadding="5dip"
+                android:layout_marginTop="10dip"
+                android:layout_marginRight="2dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

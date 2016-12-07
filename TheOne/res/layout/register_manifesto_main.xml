@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/registration_attribute_selection_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i_am"
+            android:textSize="35dip"
+            android:layout_marginTop="80dip"
+            android:textStyle="bold"
+            android:layout_marginRight="10dip"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dip"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/gay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/attribute_selection_gay_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dip"
+                android:text="or"
+                android:textColor="#9D6A19" />
+
+            <Button
+                android:id="@+id/les"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:layout_marginLeft="25dip"
+                android:background="@drawable/attribute_selection_les_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/mainfesto1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/manifesto2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip" />
+    </LinearLayout>
+</RelativeLayout>

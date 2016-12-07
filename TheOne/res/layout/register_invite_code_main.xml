@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" >
+
+        <com.theone.sns.util.uiwidget.EditTextWithClear
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ios7_white" >
+
+            <EditText
+                android:id="@+id/nick_name"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/login_user_icon"
+                android:drawablePadding="4dip"
+                android:hint="@string/nickname"
+                android:paddingLeft="8dip"
+                android:singleLine="true"
+                android:textColorHint="@color/iphone_hint" />
+        </com.theone.sns.util.uiwidget.EditTextWithClear>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/iphone_line" />
+
+        <com.theone.sns.util.uiwidget.EditTextWithClear
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ios7_white" >
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/login_password_icon"
+                android:drawablePadding="4dip"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:paddingLeft="8dip"
+                android:singleLine="true"
+                android:textColorHint="@color/iphone_hint" />
+        </com.theone.sns.util.uiwidget.EditTextWithClear>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/iphone_line" />
+
+        <com.theone.sns.util.uiwidget.EditTextWithClear
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ios7_white" >
+
+            <EditText
+                android:id="@+id/register_invite_code"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/registration_invite_code"
+                android:drawablePadding="4dip"
+                android:hint="@string/register_invite_text_choose"
+                android:imeOptions="actionDone"
+                android:paddingLeft="8dip"
+                android:singleLine="true"
+                android:textColorHint="@color/iphone_hint" />
+        </com.theone.sns.util.uiwidget.EditTextWithClear>
+
+        <TextView
+            android:id="@+id/email_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="20dip"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/iphone_submenu_normal"
+            android:text="@string/email_signup"
+            android:textColor="@color/color_929292" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip" >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="@string/register_invite_code_desc1"
+                android:textColor="@color/color_929292" />
+
+            <TextView
+                android:id="@+id/invite_code_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@id/text1"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/iphone_submenu_normal"
+                android:gravity="right"
+                android:text="@string/register_invite_code_desc2"
+                android:textColor="@color/color_929292" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

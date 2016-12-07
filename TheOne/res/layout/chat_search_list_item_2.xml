@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="81dip"
+    android:background="@drawable/list_item_background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_margin="5dip"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="70dip"
+            android:layout_height="70dip">
+
+            <com.theone.sns.util.RoundAngleImageView
+                android:id="@+id/chat_icon"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/chat_icon2"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_centerInParent="true"
+                android:background="#EEEEEE"
+                android:visibility="gone">
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon2_1"
+                    android:layout_width="27dip"
+                    android:layout_height="27dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon2_2"
+                    android:layout_width="27dip"
+                    android:layout_height="27dip"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat_icon3"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:background="#EEEEEE"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon3_1"
+                    android:layout_width="27dip"
+                    android:layout_height="27dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon3_2"
+                    android:layout_width="27dip"
+                    android:layout_height="27dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon3_3"
+                    android:layout_width="27dip"
+                    android:layout_height="27dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="2dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat_icon4"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_centerInParent="true"
+                android:background="#EEEEEE"
+                android:visibility="gone">
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon4_1"
+                    android:layout_width="27dip"
+                    android:layout_height="27dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon4_2"
+                    android:layout_width="27dip"
+                    android:layout_height="27dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon4_3"
+                    android:layout_width="27dip"
+                    android:layout_height="27dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon4_4"
+                    android:layout_width="27dip"
+                    android:layout_height="27dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="2dip" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat_icon5"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_centerInParent="true"
+                android:background="#EEEEEE"
+                android:visibility="gone">
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon5_1"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginTop="12dip"
+                    android:layout_marginLeft="12dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon5_2"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="12dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon5_3"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon5_4"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="12dip"
+                    android:layout_marginRight="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon5_5"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dip"
+                    android:layout_marginRight="2dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat_icon6"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_centerInParent="true"
+                android:background="#EEEEEE"
+                android:visibility="gone">
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon6_1"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginTop="12dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon6_2"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="12dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon6_3"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12dip"
+                    android:layout_marginBottom="12dip"
+                    android:layout_marginRight="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon6_4"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon6_5"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="12dip"
+                    android:layout_marginRight="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon6_6"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dip"
+                    android:layout_marginRight="2dip" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat_icon7"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_centerInParent="true"
+                android:background="#EEEEEE"
+                android:visibility="gone">
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon7_1"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon7_2"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon7_3"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_centerInParent="true" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon7_4"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon7_5"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon7_6"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon7_7"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="2dip" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat_icon8"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_centerInParent="true"
+                android:background="#EEEEEE"
+                android:visibility="gone">
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon8_1"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_marginLeft="12dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon8_2"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_marginLeft="12dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon8_3"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon8_4"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_centerInParent="true" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon8_5"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon8_6"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon8_7"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon8_8"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="2dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat_icon9"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_centerInParent="true"
+                android:background="#EEEEEE"
+                android:visibility="gone">
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon9_1"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon9_2"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_centerHorizontal="true" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon9_3"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dip"
+                    android:layout_marginTop="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon9_4"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon9_5"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_centerInParent="true" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon9_6"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon9_7"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginLeft="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon9_8"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="2dip" />
+
+                <com.theone.sns.util.RoundAngleImageView
+                    android:id="@+id/chat_icon9_9"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="2dip" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/chat_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="12dip"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:paddingRight="1dip"
+                android:gravity="center"
+                android:background="@drawable/badge_bg"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip">
+
+                <TextView
+                    android:id="@+id/chat_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18dip"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/chat_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginLeft="5dip"
+                    android:textSize="14dip"
+                    android:singleLine="true"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chat_con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="15dip"
+                android:layout_marginTop="5dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dip"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/iphone_line"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip" />
+</LinearLayout>

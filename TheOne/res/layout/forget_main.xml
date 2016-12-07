@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/BigTextSize"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="请输入您注册使用的邮箱或手机号" />
+
+    <com.theone.sns.util.uiwidget.EditTextWithClear
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ios7_white" >
+
+        <EditText
+            android:id="@+id/iphone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="46dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@drawable/login_user_icon"
+            android:drawablePadding="4dip"
+            android:hint="请输入您注册使用的邮箱或手机号"
+            android:paddingLeft="8dip"
+            android:singleLine="true"
+            android:textColorHint="@color/iphone_hint"
+            android:textSize="16dip" />
+    </com.theone.sns.util.uiwidget.EditTextWithClear>
+
+</LinearLayout>
